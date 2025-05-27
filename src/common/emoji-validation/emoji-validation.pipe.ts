@@ -12,7 +12,7 @@ export class EmojiValidationPipe implements PipeTransform {
         `Validation failed : ${value} is not a number`,
       );
     }
-    if (value < 0 || value > 10) {
+    if (value < 0 || value > 15) {
       throw new BadRequestException(
         `Validation failed : ${value} is not witihin range `,
       );
