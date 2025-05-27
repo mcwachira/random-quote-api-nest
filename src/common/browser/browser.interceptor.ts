@@ -16,7 +16,7 @@ export class BrowserInterceptor implements NestInterceptor {
 
     request.headers.browser = browserClient;
     console.log(
-      `Interceptor  manupilated request with new browser headet : ${request.headers.browser}`,
+      `Interceptor  manupilated request with new browser header : ${request.headers.browser}`,
     );
     return next.handle();
   }
