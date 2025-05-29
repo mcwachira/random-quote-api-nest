@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { Response } from 'express';
 
-@Catch()
+@Catch(HttpException)
 export class AllExceptionsFilter<T> implements ExceptionFilter {
   catch(exception: T, host: ArgumentsHost) {
     const switchToHttp = host.switchToHttp();
